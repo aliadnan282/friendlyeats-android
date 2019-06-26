@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     private void onAddItemsClicked() {
-        CollectionReference workout = mFirestore.collection("workout");
+        CollectionReference workout = mFirestore.collection("home-workout-283cf");
         PlanModel planModel = JsonManager.getInstance(this).getPlanExercise();
         for (Plan plan : planModel.getPlan()) {
             workout.add(plan);
